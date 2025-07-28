@@ -4,13 +4,11 @@ from sumo_rl import SumoEnvironment
 
 def make_env(use_gui=None, out_csv_name=None):
     env = SumoEnvironment(
-            #net_file="../../ITS_ML/map.net.xml",
-            #route_file="../../ITS_ML/map.rou.xml",
-            net_file="../../map.net.xml",
-            route_file="../../map.rou.xml",
+            net_file="map.net.xml",
+            route_file="map.rou.xml",
             out_csv_name=out_csv_name,
             reward_fn=["diff-waiting-time", "average-speed"],
-            reward_weights=[1.0, 0.1], # La recompensa total sería (diff_waiting_time * 1.0) + (average_speed * 0.1)
+            reward_weights=[1.0, 0.1],
             single_agent=True,
             use_gui=use_gui,
             num_seconds=3600
