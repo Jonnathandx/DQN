@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
 
 # Ruta al archivo summary.xml generado por SUMO
-summary_file = "rl_summary.xml"  # <-- cambia esta línea con la ruta correcta
+summary_file = "rl_summary.xml"
 
 # Cargar archivo
 tree = ET.parse(summary_file)
