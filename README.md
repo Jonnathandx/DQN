@@ -1,4 +1,4 @@
-# 🚦 Traffic Control with DQN and SUMO
+# 🚦 Optimization of an urban intersection using Deep Q-Learning (Single-Agent)
 
 An intelligent traffic signal control system using Deep Q-Networks (DQN) and SUMO simulation.
 
